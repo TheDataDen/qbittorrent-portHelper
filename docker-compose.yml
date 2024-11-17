@@ -1,0 +1,14 @@
+services:
+  portChecker:
+    build: .
+    restart: unless-stopped
+    container_name: portChecker
+    environment:
+      - QBITTORRENT_HOST=127.0.0.1
+      - QBITTORRENT_PORT=8080
+      - QBITTORRENT_USERNAME=admin
+      - QBITTORRENT_PASSWORD=adminadmin
+      - QBITTORRENT_UPDATE_TIME_SECONDS=60
+      - PIA_PORT_FILE_NAME=port.txt
+    volumes:
+      - /PATH/TO/DIR/CONTAINING/PORT/FILE:/pia_port
