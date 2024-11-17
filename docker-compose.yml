@@ -1,8 +1,10 @@
 services:
-  portChecker:
-    build: .
+  port-helper:
+    image: strenkml/qbittorrent-porthelper
+    build:
+      context: .
     restart: unless-stopped
-    container_name: portChecker
+    container_name: portHelper
     environment:
       - QBITTORRENT_HOST=127.0.0.1
       - QBITTORRENT_PORT=8080
