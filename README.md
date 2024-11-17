@@ -4,6 +4,11 @@ Sets the port used for incoming connections in qBittorrent from a file containin
 
 This script is currently setup to only run within the provided Docker container but could be easily modified to run on its own.
 
+## Links
+
+- [Docker Hub](https://hub.docker.com/r/strenkml/qbittorrent-porthelper)
+- [GitHub](https://github.com/TheDataDen/qbittorrent-portHelper)
+
 ## Usage
 
 ### Docker Compose
